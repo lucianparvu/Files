@@ -1,0 +1,1011 @@
+Start debugging Android application ...
+Forwarding debugger port 8899
+Detecting existing process
+> am start -a "android.intent.action.MAIN" -c "android.intent.category.LAUNCHER" -n "com.softimpera.defaultmauiapp/crc648b64a82b769a1b17.MainActivity"
+> Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.softimpera.defaultmauiapp/crc648b64a82b769a1b17.MainActivity }
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/DefaultMauiApp.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Mono.Android.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Runtime.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Java.Interop.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Runtime.InteropServices.dll [External]
+Resolved pending breakpoint for 'Android.Runtime.JNIEnvInit.RegisterJniNatives(System.IntPtr, System.Int32, System.IntPtr, System.IntPtr, System.Int32)' to /Users/runner/work/1/s/xamarin-android/src/Mono.Android/Android.Runtime/JNIEnvInit.cs:59 [0x00000].
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Collections.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Mono.Android.Runtime.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Threading.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Threading.Thread.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Diagnostics.StackTrace.dll [External]
+Loaded assembly: data-0xb400007d3a97d0a0 [External]
+Loaded assembly: data-0xb400007d3a96d090 [External]
+Loaded assembly: data-0xb400007d8a95f030 [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/netstandard.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Linq.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Collections.Concurrent.dll [External]
+Resolved pending breakpoint for 'Xamarin.HotReload.HotReloadAgent.BreakpointSendToIde(System.String)' to D:\a\_work\1\s\HotReload\Source\Xamarin.HotReload.Agent\HotReloadAgent.cs:423 [0x00000].
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Text.Json.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Text.Encodings.Web.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.ComponentModel.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Maui.Controls.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.ObjectModel.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Maui.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Maui.Graphics.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Maui.Essentials.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Extensions.Logging.Abstractions.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.ComponentModel.TypeConverter.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Private.Uri.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Runtime.Loader.dll [External]
+Resolved pending breakpoint for 'Xamarin.HotReload.HotReloadAgent.BreakpointCheckpoint()' to D:\a\_work\1\s\HotReload\Source\Xamarin.HotReload.Agent\HotReloadAgent.cs:418 [0x00000].
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Memory.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Reflection.Emit.Lightweight.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Reflection.Emit.ILGeneration.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Reflection.Primitives.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Core.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Extensions.DependencyInjection.Abstractions.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Console.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Maui.Controls.Xaml.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Extensions.Configuration.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Extensions.Configuration.Abstractions.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Extensions.Logging.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Extensions.Logging.Debug.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.AppCompat.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.Google.Android.Material.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.SwipeRefreshLayout.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Fragment.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Activity.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Lifecycle.ViewModel.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Lifecycle.Common.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.SavedState.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.DrawerLayout.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.CustomView.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Navigation.Runtime.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Net.Primitives.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Net.Http.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Extensions.Options.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Extensions.DependencyInjection.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Diagnostics.Tracing.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Security.Cryptography.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Diagnostics.DiagnosticSource.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Collections.NonGeneric.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Net.Requests.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Xml.ReaderWriter.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Private.Xml.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Text.Encoding.Extensions.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Numerics.Vectors.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/mscorlib.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.dll [External]
+[.defaultmauiapp] Late-enabling -Xcheck:jni
+[.defaultmauiapp] Using CollectorTypeCC GC.
+[CompatibilityChangeReporter] Compat change id reported: 171979766; UID 10357; state: ENABLED
+[nativeloader] Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/lib/arm64:/data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.softimpera.defaultmauiapp
+[nativeloader] Extending system_exposed_libraries: libhumantracking.arcsoft.so:libPortraitDistortionCorrection.arcsoft.so:libPortraitDistortionCorrectionCali.arcsoft.so:libface_landmark.arcsoft.so:libFacialStickerEngine.arcsoft.so:libfrtracking_engine.arcsoft.so:libFaceRecognition.arcsoft.so:libveengine.arcsoft.so:lib_pet_detection.arcsoft.so:libhigh_res.arcsoft.so:libimage_enhancement.arcsoft.so:liblow_light_hdr.arcsoft.so:libhigh_dynamic_range.arcsoft.so:libsuperresolution.arcsoft.so:libobjectcapture.arcsoft.so:libobjectcapture_jni.arcsoft.so:libobjectcapture_jni.arcsoft.so:libFacialAttributeDetection.arcsoft.so:libBeauty_v4.camera.samsung.so:libexifa.camera.samsung.so:libjpega.camera.samsung.so:libOpenCv.camera.samsung.so:libVideoClassifier.camera.samsung.so:libtensorflowLite.dynamic_viewing.camera.samsung.so:libImageScreener.camera.samsung.so:libMyFilter.camera.samsung.so:libtflite2.myfilters.camera.samsung.so:libCandidSnapJNI.camera.samsung.so:libHIDTSnapJNI.camera.samsung.so:libSmartScan.camera.samsung.so:libRectify.
+[ziparchive] Unable to open '/data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/base.dm': No such file or directory
+[ziparchive] Unable to open '/data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/base.dm': No such file or directory
+[nativeloader] Configuring classloader-namespace for other apk /data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/base.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/lib/arm64:/data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.softimpera.defaultmauiapp
+[GraphicsEnvironment] ANGLE Developer option for 'com.softimpera.defaultmauiapp' set to: 'default'
+[GraphicsEnvironment] ANGLE GameManagerService for com.softimpera.defaultmauiapp: false
+[GraphicsEnvironment] App is not on the allowlist for updatable production driver.
+[NetworkSecurityConfig] Using Network Security Config from resource network_security_config debugBuild: true
+[NetworkSecurityConfig] Using Network Security Config from resource network_security_config debugBuild: true
+[debug-app-helper] Checking if libmonodroid was unpacked to /data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/lib/arm64/libmonodroid.so
+[debug-app-helper] Native libs extracted to /data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/lib/arm64, assuming application/android:extractNativeLibs == true
+[debug-app-helper] Setting up for DSO lookup in app data directories
+[debug-app-helper] Added filesystem DSO lookup location: /data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/lib/arm64
+[debug-app-helper] Using runtime path: /data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/lib/arm64
+[debug-app-helper] checking directory: `/data/user/0/com.softimpera.defaultmauiapp/files/.__override__/lib`
+[debug-app-helper] directory does not exist: `/data/user/0/com.softimpera.defaultmauiapp/files/.__override__/lib`
+[debug-app-helper] Checking whether Mono runtime exists at: /data/user/0/com.softimpera.defaultmauiapp/files/.__override__/libmonosgen-2.0.so
+[debug-app-helper] Checking whether Mono runtime exists at: /data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/lib/arm64/libmonosgen-2.0.so
+[debug-app-helper] Mono runtime found at: /data/app/~~y2IUVRYDSbKrISy825SABw==/com.softimpera.defaultmauiapp-EVDkP1P121B5v21UUxsgbQ==/lib/arm64/libmonosgen-2.0.so
+[.defaultmauiapp] Attempt to remove non-JNI local reference, dumping thread
+[DOTNET] JNI_OnLoad: JNI_OnLoad in pal_jni.c
+[DOTNET] GetOptionalClassGRef: optional class com/android/org/conscrypt/OpenSSLEngineImpl was not found
+[monodroid] Creating public update directory: `/data/user/0/com.softimpera.defaultmauiapp/files/.__override__`
+[.defaultmauiapp] Attempt to remove non-JNI local reference, dumping thread
+[monodroid-debug] Trying to initialize the debugger with options: --debugger-agent=transport=dt_socket,loglevel=0,address=127.0.0.1:8899,server=y,embedding=1,timeout=1687945398
+[monodroid-assembly] open_from_bundles: failed to load assembly DefaultMauiApp.dll
+[monodroid-gc] GREF GC Threshold: 46080
+[monodroid-assembly] open_from_bundles: failed to load assembly Mono.Android.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Runtime.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Java.Interop.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Runtime.InteropServices.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Collections.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Mono.Android.Runtime.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Threading.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Threading.Thread.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Diagnostics.StackTrace.dll
+[.defaultmauiapp] Attempt to remove non-JNI local reference, dumping thread
+[monodroid-assembly] open_from_bundles: failed to load assembly netstandard.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Linq.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.VisualStudio.DesignTools.TapContract.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.VisualStudio.DesignTools.TapContract.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.HotReload.Contracts.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.HotReload.Contracts.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Collections.Concurrent.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Text.Json.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Text.Encodings.Web.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.ComponentModel.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Maui.Controls.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.HotReload.Contracts.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.HotReload.Contracts.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.VisualStudio.DesignTools.TapContract.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.VisualStudio.DesignTools.TapContract.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.ObjectModel.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Maui.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Maui.Graphics.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Maui.Essentials.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Extensions.Logging.Abstractions.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.ComponentModel.TypeConverter.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Private.Uri.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Runtime.Loader.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Memory.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Reflection.Emit.Lightweight.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Reflection.Emit.ILGeneration.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Reflection.Primitives.dll
+[CompatibilityChangeReporter] Compat change id reported: 183155436; UID 10357; state: ENABLED
+[FirebaseApp] Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+[FirebaseInitProvider] FirebaseApp initialization successful
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Core.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Extensions.DependencyInjection.Abstractions.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Console.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Maui.Controls.Xaml.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Extensions.Configuration.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Extensions.Configuration.Abstractions.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Extensions.Logging.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Extensions.Logging.Debug.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.AppCompat.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.Google.Android.Material.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.SwipeRefreshLayout.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Fragment.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Activity.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Lifecycle.ViewModel.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Lifecycle.Common.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.SavedState.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.DrawerLayout.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.CustomView.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Navigation.Runtime.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Net.Primitives.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Net.Http.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Extensions.Options.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Extensions.DependencyInjection.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Diagnostics.Tracing.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Security.Cryptography.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Diagnostics.DiagnosticSource.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Collections.NonGeneric.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Net.Requests.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Xml.ReaderWriter.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Private.Xml.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Text.Encoding.Extensions.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Numerics.Vectors.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly mscorlib.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Text.RegularExpressions.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Text.RegularExpressions.dll [External]
+Thread started:  #2
+Thread started:  #3
+Thread started:  #4
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Runtime.Serialization.Json.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Private.DataContractSerialization.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Runtime.Serialization.Xml.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Runtime.Serialization.Primitives.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Runtime.Serialization.Json.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Private.DataContractSerialization.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Runtime.Serialization.Xml.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Runtime.Serialization.Primitives.dll [External]
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Runtime.Intrinsics.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Runtime.Intrinsics.dll [External]
+Thread started: <Thread Pool> #5
+Thread started: .NET TP Gate #6
+Thread started: <Thread Pool> #7
+Thread started: .NET Timer #8
+Thread started: <Thread Pool> #9
+[TrafficStats] tagSocket(85) with statsTag=0xffffffff, statsUid=-1
+Thread started: <Thread Pool> #10
+[TrafficStats] tagSocket(88) with statsTag=0xffffffff, statsUid=-1
+Thread started: <Thread Pool> #11
+Thread started: <Thread Pool> #12
+[TrafficStats] tagSocket(91) with statsTag=0xffffffff, statsUid=-1
+[TrafficStats] tagSocket(92) with statsTag=0xffffffff, statsUid=-1
+Thread started: <Thread Pool> #13
+[TrafficStats] tagSocket(93) with statsTag=0xffffffff, statsUid=-1
+Thread started: <Thread Pool> #14
+[monodroid-assembly] open_from_bundles: failed to load assembly System.IO.Compression.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly System.IO.Compression.Brotli.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.IO.Compression.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.IO.Compression.Brotli.dll [External]
+[monodroid-assembly] open_from_bundles: failed to load assembly ro-RO/DefaultMauiApp.resources.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/ro-RO/DefaultMauiApp.resources.dll [External]
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.RecyclerView.dll
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.CardView.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.RecyclerView.dll [External]
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.CardView.dll [External]
+[OpenGLRenderer] RenderThread::requireGlContext()
+[OpenGLRenderer] RenderThread::setGrContext()
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Loader.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Loader.dll [External]
+[AppCompatDelegate] Checking for metadata for AppLocalesMetadataHolderService : Service not found
+[monodroid-assembly] open_from_bundles: failed to load assembly _Microsoft.Android.Resource.Designer.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/_Microsoft.Android.Resource.Designer.dll [External]
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Window.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Window.dll [External]
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.CoordinatorLayout.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.CoordinatorLayout.dll [External]
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Lifecycle.LiveData.Core.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Lifecycle.LiveData.Core.dll [External]
+[monodroid-assembly] open_from_bundles: failed to load assembly Microsoft.Extensions.Primitives.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Microsoft.Extensions.Primitives.dll [External]
+[DecorView] [INFO] isPopOver=false config=true
+[DecorView] updateCaptionType: isFloating=false isApplication=true hasWindowDecorCaption=false this=DecorView@bd97d36[]
+[DecorView] setCaptionType = 0, this = DecorView@bd97d36[]
+[DecorView] getCurrentDensityDpi: from real metrics. densityDpi=450 msg=resources_loaded
+[DecorView] setWindowBackground: isPopOver=false color=ffffffff d=android.graphics.drawable.ColorDrawable@d8eeda4
+[.defaultmauiapp] Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+[.defaultmauiapp] Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.ViewPager2.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.ViewPager2.dll [External]
+[CompatibilityChangeReporter] Compat change id reported: 171228096; UID 10357; state: ENABLED
+[TabLayout] MODE_SCROLLABLE + GRAVITY_FILL is not supported, GRAVITY_START will be used instead
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.Lifecycle.Runtime.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.Lifecycle.Runtime.dll [External]
+[CompatibilityChangeReporter] Compat change id reported: 210923482; UID 10357; state: ENABLED
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.ViewPager.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.ViewPager.dll [External]
+[monodroid-assembly] open_from_bundles: failed to load assembly Xamarin.AndroidX.AppCompat.AppCompatResources.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/Xamarin.AndroidX.AppCompat.AppCompatResources.dll [External]
+[MSHandlerLifeCycle] check: return. pkg=com.softimpera.defaultmauiapp parent=null callers=com.android.internal.policy.DecorView.setVisibility:4416 android.app.ActivityThread.handleResumeActivity:5476 android.app.servertransaction.ResumeActivityItem.execute:54 android.app.servertransaction.ActivityTransactionItem.execute:45 android.app.servertransaction.TransactionExecutor.executeLifecycleState:176 
+[MSHandlerLifeCycle] removeMultiSplitHandler: no exist. decor=DecorView@bd97d36[]
+[NativeCustomFrequencyManager] [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+[InsetsController] onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 75 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(512, 0 - 569, 75), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={2.8125} cutoutSpec={M 0, 0 H -10.13333333333333 V 26.66666666666667 H 10.13333333333333 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 75) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,75], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,109], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,75], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,75], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false} } host=com.softimpera.defaultmauiapp/crc648b64a82b769a1b17.MainActivity from=android.view.ViewRootImpl.setView:1732
+[ViewRootImpl@6ffcbde[MainActivity]] setView = com.android.internal.policy.DecorView@bd97d36 TM=true
+[MSHandlerLifeCycle] removeMultiSplitHandler: no exist. decor=DecorView@bd97d36[MainActivity]
+[monodroid-assembly] open_from_bundles: failed to load assembly System.ComponentModel.Annotations.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.ComponentModel.Annotations.dll [External]
+[Choreographer] Skipped 38 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] performTraversals params={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION wanim=0x1030309
+[ViewRootImpl@6ffcbde[MainActivity]]   fl=81810100
+[ViewRootImpl@6ffcbde[MainActivity]]   pfl=12020040
+[ViewRootImpl@6ffcbde[MainActivity]]   bhv=DEFAULT
+[ViewRootImpl@6ffcbde[MainActivity]]   fitSides= naviIconColor=0
+[ViewRootImpl@6ffcbde[MainActivity]]   sfl=100000}
+[ViewRootImpl@6ffcbde[MainActivity]] performTraversals mFirst=true windowShouldResize=true viewVisibilityChanged=false mForceNextWindowRelayout=false params={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION wanim=0x1030309
+[ViewRootImpl@6ffcbde[MainActivity]]   fl=81810100
+[ViewRootImpl@6ffcbde[MainActivity]]   pfl=12020040
+[ViewRootImpl@6ffcbde[MainActivity]]   bhv=DEFAULT
+[ViewRootImpl@6ffcbde[MainActivity]]   fitSides= naviIconColor=0
+[ViewRootImpl@6ffcbde[MainActivity]]   sfl=100000}
+[ViewRootImpl@6ffcbde[MainActivity]] updateBlastSurfaceIfNeeded mBlastBufferQueue=null isSameSurfaceControl=false
+[BLASTBufferQueue] new BLASTBufferQueue, mName= ViewRootImpl@6ffcbde[MainActivity] mNativeObject= 0xb400007c2a95c6f0 sc.mNativeObject= 0xb400007bba94e5d0 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 android.view.Choreographer.doCallbacks:923 android.view.Choreographer.doFrame:852 android.view.Choreographer$FrameDisplayEventReceiver.run:1283 
+[BLASTBufferQueue] update, w= 1080 h= 2400 mName = ViewRootImpl@6ffcbde[MainActivity] mNativeObject= 0xb400007c2a95c6f0 sc.mNativeObject= 0xb400007bba94e5d0 format= -1 caller= android.graphics.BLASTBufferQueue.<init>:84 android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:2909 android.view.ViewRootImpl.relayoutWindow:9847 android.view.ViewRootImpl.performTraversals:3884 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 
+[ViewRootImpl@6ffcbde[MainActivity]] Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=12 res=0x3 s={true 0xb400007cbd1da9c0} ch=true seqId=0
+[ViewRootImpl@6ffcbde[MainActivity]] mThreadedRenderer.initialize() mSurface={isValid=true 0xb400007cbd1da9c0} hwInitialized=true
+[OpenGLRenderer] eglCreateWindowSurface
+[.defaultmauiapp] Compiler allocated 4177KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+[ViewRootImpl@6ffcbde[MainActivity]] reportNextDraw android.view.ViewRootImpl.performTraversals:4438 android.view.ViewRootImpl.doTraversal:3116 android.view.ViewRootImpl$TraversalRunnable.run:10885 android.view.Choreographer$CallbackRecord.run:1301 android.view.Choreographer$CallbackRecord.run:1309 
+[CustomViewTarget] Glide treats LayoutParams.WRAP_CONTENT as a request for an image the size of this device's screen dimensions. If you want to load the original image and are ok with the corresponding memory cost and OOMs (depending on the input size), use .override(Target.SIZE_ORIGINAL). Otherwise, use LayoutParams.MATCH_PARENT, set layout_width and layout_height to fixed dimension, or use .override() with fixed dimensions.
+[CustomViewTarget] Glide treats LayoutParams.WRAP_CONTENT as a request for an image the size of this device's screen dimensions. If you want to load the original image and are ok with the corresponding memory cost and OOMs (depending on the input size), use .override(Target.SIZE_ORIGINAL). Otherwise, use LayoutParams.MATCH_PARENT, set layout_width and layout_height to fixed dimension, or use .override() with fixed dimensions.
+[ViewRootImpl@6ffcbde[MainActivity]] Setup new sync id=0
+[ViewRootImpl@6ffcbde[MainActivity]] Setting syncFrameCallback
+[ViewRootImpl@6ffcbde[MainActivity]] registerCallbacksForSync syncBuffer=false
+[ViewRootImpl@6ffcbde[MainActivity]] Received frameDrawingCallback syncResult=0 frameNum=1.
+[ViewRootImpl@6ffcbde[MainActivity]] Setting up sync and frameCommitCallback
+[BLASTBufferQueue] [ViewRootImpl@6ffcbde[MainActivity]#0](f:0,a:0) onFrameAvailable the first frame is available
+[ViewRootImpl@6ffcbde[MainActivity]] Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+[OpenGLRenderer] CFMS:: SetUp Pid : 18381    Tid : 18471
+[Parcel] Expecting binder but got null!
+[ViewRootImpl@6ffcbde[MainActivity]] onSyncComplete
+[ViewRootImpl@6ffcbde[MainActivity]] setupSync seqId=0 mSyncId=0 fn=1 caller=android.view.ViewRootImpl$$ExternalSyntheticLambda11.accept:6 android.window.SurfaceSyncer.lambda$setupSync$1$android-window-SurfaceSyncer:128 android.window.SurfaceSyncer$$ExternalSyntheticLambda1.accept:8 android.window.SurfaceSyncer$SyncSet.checkIfSyncIsComplete:382 android.window.SurfaceSyncer$SyncSet.markSyncReady:359 android.window.SurfaceSyncer.markSyncReady:151 android.view.ViewRootImpl.performTraversals:4503 
+[ViewRootImpl@6ffcbde[MainActivity]] reportDrawFinished seqId=0 mSyncId=-1 fn=1 mSurfaceChangedTransaction=0xb400007bea928010
+[Choreographer] Skipped 34 frames!  The application may be doing too much work on its main thread.
+[OpenGLRenderer] Davey! duration=1244ms; Flags=1, FrameTimelineVsyncId=3469822, IntendedVsync=14594748600172, Vsync=14595381933480, InputEventId=0, HandleInputStart=14595391859560, AnimationStart=14595391862752, PerformTraversalsStart=14595391863560, DrawStart=14595701774868, FrameDeadline=14594756933505, FrameInterval=14595391764752, FrameStartTime=16666666, SyncQueued=14595745989483, SyncStart=14595746062406, IssueDrawCommandsStart=14595746738560, SwapBuffers=14595990761637, FrameCompleted=14595993022214, DequeueBufferDuration=27962, QueueBufferDuration=334693, GpuCompleted=14595993022214, SwapBuffersCompleted=14595991523790, DisplayPresentTime=0, CommandSubmissionCompleted=14595990761637, 
+[ConnectivityManager] StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4191)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:4755)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4722)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:4696)] [com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPostApi24.register(SingletonConnectivityReceiver.java:191)] [com.bumptech.glide.manager.SingletonConnectivityReceiver.maybeRegisterReceiver(SingletonConnectivityReceiver.java:113)] [com.bumptech.glide.manager.SingletonConnectivityReceiver.register(SingletonConnectivityReceiver.java:94)] [com.bumptech.glide.manager.DefaultConnectivityMonitor.register(DefaultConnectivityMonitor.java:25)] [com.bumptech.glide.manager.DefaultConnectivityMonitor.onStart(DefaultConnectivityMonitor.java:34)] [com.bumptech.glide.manager.ActivityFragmentLifecycle.onStart(ActivityFragmentLifecycle.java:51)] [com.bumptech.glide.manager.SupportRequestManagerFragment.onStart(SupportRequestManagerFragment.java:203)] [androidx.fragment.app.Fragment.performStart(Fragment.java:3162)] [androidx.fragment.app.FragmentStateManager.start(FragmentStateManager.java:588)] [androidx.fragment.app.FragmentStateManager.moveToExpectedState(FragmentStateManager.java:279)] [androidx.fragment.app.FragmentManager.executeOpsTogether(FragmentManager.java:1899)] [androidx.fragment.app.FragmentManager.removeRedundantOperationsAndExecute(FragmentManager.java:1817)] [androidx.fragment.app.FragmentManager.execPendingActions(FragmentManager.java:1760)] [androidx.fragment.app.FragmentManager$5.run(FragmentManager.java:547)]
+[ViewRootImpl@6ffcbde[MainActivity]] MSG_WINDOW_FOCUS_CHANGED 1 0
+[ViewRootImpl@6ffcbde[MainActivity]] mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb400007cbd1da9c0}
+[InputMethodManager] startInputInner - Id : 0
+[InputMethodManager] startInputInner - mService.startInputOrWindowGainedFocus
+[Choreographer] Already have a pending vsync event.  There should only be one at a time.
+[InputMethodManager] startInputInner - Id : 0
+[InsetsController] onStateChanged: InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2400), mDisplayCutout=DisplayCutout{insets=Rect(0, 75 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(512, 0 - 569, 75), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2400 physicalDisplayWidth=1080 physicalDisplayHeight=2400 density={2.8125} cutoutSpec={M 0, 0 H -10.13333333333333 V 26.66666666666667 H 10.13333333333333 V 0 H 0 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=90, center=Point(90, 90)}, RoundedCorner{position=TopRight, radius=90, center=Point(990, 90)}, RoundedCorner{position=BottomRight, radius=90, center=Point(990, 2310)}, RoundedCorner{position=BottomLeft, radius=90, center=Point(90, 2310)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2400), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 75) rotation=0}, mSources= { InsetsSource: {mType=ITYPE_STATUS_BAR, mFrame=[0,0][1080,75], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_NAVIGATION_BAR, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_GESTURES, mFrame=[0,0][0,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_GESTURES, mFrame=[1080,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_MANDATORY_GESTURES, mFrame=[0,0][1080,109], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_MANDATORY_GESTURES, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_LEFT_DISPLAY_CUTOUT, mFrame=[0,0][-100000,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_DISPLAY_CUTOUT, mFrame=[0,0][1080,75], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_RIGHT_DISPLAY_CUTOUT, mFrame=[100000,0][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_DISPLAY_CUTOUT, mFrame=[0,100000][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_TOP_TAPPABLE_ELEMENT, mFrame=[0,0][1080,75], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_BOTTOM_TAPPABLE_ELEMENT, mFrame=[0,2265][1080,2400], mVisible=true, mInsetsRoundedCornerFrame=false}, InsetsSource: {mType=ITYPE_IME, mFrame=[0,0][0,0], mVisibleFrame=[0,1481][1080,2400], mVisible=false, mInsetsRoundedCornerFrame=false} } host=com.softimpera.defaultmauiapp/crc648b64a82b769a1b17.MainActivity from=android.view.ViewRootImpl$ViewRootHandler.handleMessageImpl:6740
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Xml.XmlSerializer.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Xml.XmlSerializer.dll [External]
+Thread finished: <Thread Pool> #12
+Thread finished: <Thread Pool> #5
+Thread finished: <Thread Pool> #9
+Thread finished: <Thread Pool> #13
+Thread finished: <Thread Pool> #11
+The thread 0xc has exited with code 0 (0x0).
+The thread 0x5 has exited with code 0 (0x0).
+The thread 0x9 has exited with code 0 (0x0).
+The thread 0xd has exited with code 0 (0x0).
+The thread 0xb has exited with code 0 (0x0).
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #15
+Thread started: <Thread Pool> #16
+Thread started: <Thread Pool> #17
+Thread started: <Thread Pool> #18
+[TrafficStats] tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+[TrafficStats] tagSocket(133) with statsTag=0xffffffff, statsUid=-1
+[TrafficStats] tagSocket(135) with statsTag=0xffffffff, statsUid=-1
+Thread started: <Thread Pool> #19
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #20
+Thread started: <Thread Pool> #21
+Thread started: <Thread Pool> #22
+Thread started: <Thread Pool> #23
+Thread started: <Thread Pool> #24
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[Choreographer] Skipped 34 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Compiler allocated 6133KB to compile void android.view.ViewRootImpl.performTraversals()
+Thread started: <Thread Pool> #25
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #26
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 35070(1480KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 9571KB/18MB, paused 18us,21us total 17.747ms
+Thread started: <Thread Pool> #28
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #29
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #30
+Thread started: <Thread Pool> #31
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #32
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #33
+Thread started: <Thread Pool> #34
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #35
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #36
+Thread started: <Thread Pool> #37
+Thread started: <Thread Pool> #38
+Thread started: <Thread Pool> #39
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[Choreographer] Skipped 34 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+Thread started: <Thread Pool> #40
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 39576(1549KB) AllocSpace objects, 49(6468KB) LOS objects, 49% free, 11MB/23MB, paused 22us,28us total 23.495ms
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 48330(1969KB) AllocSpace objects, 30(3960KB) LOS objects, 49% free, 14MB/29MB, paused 19us,30us total 29.928ms
+[Choreographer] Skipped 36 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 50131(2177KB) AllocSpace objects, 63(8316KB) LOS objects, 49% free, 17MB/34MB, paused 26us,24us total 38.132ms
+[Choreographer] Skipped 80 frames!  The application may be doing too much work on its main thread.
+[monodroid-assembly] open_from_bundles: failed to load assembly System.Web.HttpUtility.dll
+Loaded assembly: /data/data/com.softimpera.defaultmauiapp/files/.__override__/System.Web.HttpUtility.dll [External]
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 49739(2214KB) AllocSpace objects, 69(9108KB) LOS objects, 50% free, 19MB/39MB, paused 22us,29us total 42.287ms
+[OpenGLRenderer] Davey! duration=983ms; Flags=0, FrameTimelineVsyncId=3493923, IntendedVsync=14722588945752, Vsync=14722605745566, InputEventId=0, HandleInputStart=14722607379546, AnimationStart=14722607381700, PerformTraversalsStart=14722607382123, DrawStart=14723549234968, FrameDeadline=14722605678992, FrameInterval=14722607371738, FrameStartTime=8399907, SyncQueued=14723558017968, SyncStart=14723558095930, IssueDrawCommandsStart=14723559039815, SwapBuffers=14723569022238, FrameCompleted=14723572969353, DequeueBufferDuration=31538, QueueBufferDuration=207730, GpuCompleted=14723572969353, SwapBuffersCompleted=14723571885738, DisplayPresentTime=14718514433626, CommandSubmissionCompleted=14723569022238, 
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 34628(1345KB) AllocSpace objects, 34(4488KB) LOS objects, 50% free, 21MB/43MB, paused 20us,27us total 47.768ms
+[OpenGLRenderer] Davey! duration=747ms; Flags=0, FrameTimelineVsyncId=3498289, IntendedVsync=14739263730234, Vsync=14739280499998, InputEventId=0, HandleInputStart=14739296431534, AnimationStart=14739296432457, PerformTraversalsStart=14739296432842, DrawStart=14739973807341, FrameDeadline=14739288778252, FrameInterval=14739296424996, FrameStartTime=8381352, SyncQueued=14739983650918, SyncStart=14739983685149, IssueDrawCommandsStart=14739984672611, SwapBuffers=14740008450264, FrameCompleted=14740011317495, DequeueBufferDuration=10038, QueueBufferDuration=184693, GpuCompleted=14740011317495, SwapBuffersCompleted=14740009065918, DisplayPresentTime=14737846649343, CommandSubmissionCompleted=14740008450264, 
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Background concurrent copying GC freed 31783(1418KB) AllocSpace objects, 163(21MB) LOS objects, 49% free, 24MB/48MB, paused 37us,26us total 101.476ms
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 52368(2136KB) AllocSpace objects, 70(9240KB) LOS objects, 49% free, 24MB/48MB, paused 21us,24us total 55.034ms
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 49496(2017KB) AllocSpace objects, 69(9108KB) LOS objects, 47% free, 26MB/50MB, paused 21us,27us total 68.996ms
+[OpenGLRenderer] Davey! duration=809ms; Flags=0, FrameTimelineVsyncId=3507800, IntendedVsync=14766880036423, Vsync=14766888369756, InputEventId=0, HandleInputStart=14766892822591, AnimationStart=14766892824014, PerformTraversalsStart=14766892824399, DrawStart=14767667877091, FrameDeadline=14766896703089, FrameInterval=14766892813899, FrameStartTime=8333333, SyncQueued=14767676725860, SyncStart=14767677005283, IssueDrawCommandsStart=14767677730822, SwapBuffers=14767688082975, FrameCompleted=14767689679668, DequeueBufferDuration=16654, QueueBufferDuration=241039, GpuCompleted=14767689679668, SwapBuffersCompleted=14767688779822, DisplayPresentTime=14763947605132, CommandSubmissionCompleted=14767688082975, 
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 30 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 38962(1692KB) AllocSpace objects, 63(8316KB) LOS objects, 45% free, 28MB/52MB, paused 22us,28us total 65.034ms
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 68 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 39260(1802KB) AllocSpace objects, 56(7392KB) LOS objects, 43% free, 30MB/54MB, paused 20us,29us total 69.876ms
+[Choreographer] Skipped 61 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 30 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 40066(1649KB) AllocSpace objects, 56(7392KB) LOS objects, 42% free, 32MB/56MB, paused 21us,30us total 74.459ms
+[Choreographer] Skipped 67 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[OpenGLRenderer] Davey! duration=719ms; Flags=0, FrameTimelineVsyncId=3521461, IntendedVsync=14815802413714, Vsync=14815819184392, InputEventId=0, HandleInputStart=14815820982864, AnimationStart=14815820983787, PerformTraversalsStart=14815820984056, DrawStart=14816500701594, FrameDeadline=14815819132386, FrameInterval=14815820975056, FrameStartTime=8385339, SyncQueued=14816509659440, SyncStart=14816509713594, IssueDrawCommandsStart=14816510241556, SwapBuffers=14816520237633, FrameCompleted=14816521808517, DequeueBufferDuration=12731, QueueBufferDuration=257770, GpuCompleted=14816521808517, SwapBuffersCompleted=14816520960825, DisplayPresentTime=14812296998982, CommandSubmissionCompleted=14816520237633, 
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 31 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 31 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 37125(1449KB) AllocSpace objects, 56(7392KB) LOS objects, 41% free, 34MB/58MB, paused 21us,27us total 82.630ms
+[Choreographer] Skipped 60 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 61 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 32 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 32 frames!  The application may be doing too much work on its main thread.
+[.defaultmauiapp] Explicit concurrent copying GC freed 28395(1411KB) AllocSpace objects, 56(7392KB) LOS objects, 39% free, 36MB/60MB, paused 22us,29us total 87.690ms
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[OpenGLRenderer] Davey! duration=963ms; Flags=0, FrameTimelineVsyncId=3528060, IntendedVsync=14843837491096, Vsync=14843871086814, InputEventId=0, HandleInputStart=14843871121729, AnimationStart=14843871123344, PerformTraversalsStart=14843871123805, DrawStart=14844758459497, FrameDeadline=14843862546932, FrameInterval=14843871111652, FrameStartTime=8389170, SyncQueued=14844768955651, SyncStart=14844769001497, IssueDrawCommandsStart=14844770152843, SwapBuffers=14844796781305, FrameCompleted=14844800566651, DequeueBufferDuration=12885, QueueBufferDuration=217423, GpuCompleted=14844800566651, SwapBuffersCompleted=14844797291113, DisplayPresentTime=14842486702230, CommandSubmissionCompleted=14844796781305, 
+[.defaultmauiapp] Explicit concurrent copying GC freed 6319(513KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 36MB/60MB, paused 21us,30us total 80.678ms
+[.defaultmauiapp] Explicit concurrent copying GC freed 12630(617KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 35MB/59MB, paused 22us,30us total 81.199ms
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 120 frames!  The application may be doing too much work on its main thread.
+[OpenGLRenderer] Davey! duration=1054ms; Flags=0, FrameTimelineVsyncId=3528937, IntendedVsync=14844767964188, Vsync=14845774664588, InputEventId=369420043, HandleInputStart=14845781426996, AnimationStart=14845781448496, PerformTraversalsStart=14845781580958, DrawStart=14845799749573, FrameDeadline=14844784686691, FrameInterval=14845781372458, FrameStartTime=8389170, SyncQueued=14845803830458, SyncStart=14845803874843, IssueDrawCommandsStart=14845805971612, SwapBuffers=14845818237496, FrameCompleted=14845822031035, DequeueBufferDuration=27462, QueueBufferDuration=216885, GpuCompleted=14845822031035, SwapBuffersCompleted=14845818660419, DisplayPresentTime=14842495086230, CommandSubmissionCompleted=14845818237496, 
+[Choreographer] Skipped 30 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 30 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 33 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 30 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[.defaultmauiapp] Explicit concurrent copying GC freed 28696(1076KB) AllocSpace objects, 0(0B) LOS objects, 38% free, 37MB/61MB, paused 21us,28us total 86.765ms
+[OpenGLRenderer] Davey! duration=1051ms; Flags=0, FrameTimelineVsyncId=3532176, IntendedVsync=14858755728362, Vsync=14858764061695, InputEventId=0, HandleInputStart=14858770230679, AnimationStart=14858770231910, PerformTraversalsStart=14858770232218, DrawStart=14859777980486, FrameDeadline=14858772395028, FrameInterval=14858770221603, FrameStartTime=8333333, SyncQueued=14859788556679, SyncStart=14859788614333, IssueDrawCommandsStart=14859789149948, SwapBuffers=14859805972909, FrameCompleted=14859807436640, DequeueBufferDuration=14500, QueueBufferDuration=214385, GpuCompleted=14859807436640, SwapBuffersCompleted=14859806477333, DisplayPresentTime=14854010143991, CommandSubmissionCompleted=14859805972909, 
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 54 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[OpenGLRenderer] Davey! duration=757ms; Flags=0, FrameTimelineVsyncId=3532866, IntendedVsync=14861759372459, Vsync=14862142705777, InputEventId=0, HandleInputStart=14862148296754, AnimationStart=14862148298100, PerformTraversalsStart=14862148298369, DrawStart=14862492156138, FrameDeadline=14861792705791, FrameInterval=14862148289792, FrameStartTime=16666666, SyncQueued=14862504132715, SyncStart=14862504209331, IssueDrawCommandsStart=14862504555908, SwapBuffers=14862514257677, FrameCompleted=14862516726638, DequeueBufferDuration=17231, QueueBufferDuration=581616, GpuCompleted=14862516726638, SwapBuffersCompleted=14862516045331, DisplayPresentTime=14856710809296, CommandSubmissionCompleted=14862514257677, 
+[OpenGLRenderer] Davey! duration=831ms; Flags=0, FrameTimelineVsyncId=3532885, IntendedVsync=14862495315651, Vsync=14862961982299, InputEventId=108937022, HandleInputStart=14862966637753, AnimationStart=14862966639407, PerformTraversalsStart=14862966775100, DrawStart=14863308664676, FrameDeadline=14862520315650, FrameInterval=14862966629830, FrameStartTime=16666666, SyncQueued=14863314582330, SyncStart=14863314625561, IssueDrawCommandsStart=14863314821945, SwapBuffers=14863323245907, FrameCompleted=14863326440869, DequeueBufferDuration=14384, QueueBufferDuration=206846, GpuCompleted=14863326440869, SwapBuffersCompleted=14863324567599, DisplayPresentTime=14856719172181, CommandSubmissionCompleted=14863323245907, 
+[TrafficStats] tagSocket(85) with statsTag=0xffffffff, statsUid=-1
+[TrafficStats] tagSocket(88) with statsTag=0xffffffff, statsUid=-1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 33 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 30 frames!  The application may be doing too much work on its main thread.
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[monodroid-assembly] Shared library 'liblog' not loaded, p/invoke '__android_log_print' may fail
+[monodroid-assembly] Shared library 'liblog' not loaded, p/invoke '__android_log_print' may fail
+[monodroid-assembly] Shared library 'liblog' not loaded, p/invoke '__android_log_print' may fail
+[monodroid-assembly] Shared library 'liblog' not loaded, p/invoke '__android_log_print' may fail
+[monodroid-assembly] Shared library 'liblog' not loaded, p/invoke '__android_log_print' may fail
+[monodroid-gc] 46082 outstanding GREFs. Performing a full GC!
+[monodroid-gc] 46084 outstanding GREFs. Performing a full GC!
+[monodroid-gc] 46083 outstanding GREFs. Performing a full GC!
+[monodroid-gc] 46080 outstanding GREFs. Performing a full GC!
+[monodroid-gc] 46081 outstanding GREFs. Performing a full GC!
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[.defaultmauiapp] Explicit concurrent copying GC freed 27389(1287KB) AllocSpace objects, 10(1000KB) LOS objects, 38% free, 38MB/62MB, paused 21us,27us total 94.347ms
+[.defaultmauiapp] Explicit concurrent copying GC freed 3745(164KB) AllocSpace objects, 4(80KB) LOS objects, 38% free, 38MB/62MB, paused 23us,29us total 84.602ms
+[.defaultmauiapp] Explicit concurrent copying GC freed 25(32KB) AllocSpace objects, 0(0B) LOS objects, 38% free, 38MB/62MB, paused 22us,27us total 96.411ms
+[.defaultmauiapp] Explicit concurrent copying GC freed 110(61KB) AllocSpace objects, 0(0B) LOS objects, 38% free, 38MB/62MB, paused 21us,31us total 84.706ms
+[.defaultmauiapp] Explicit concurrent copying GC freed 6(32KB) AllocSpace objects, 0(0B) LOS objects, 38% free, 38MB/62MB, paused 22us,29us total 86.161ms
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 347 frames!  The application may be doing too much work on its main thread.
+[OpenGLRenderer] Davey! duration=2921ms; Flags=0, FrameTimelineVsyncId=3534279, IntendedVsync=14870312957954, Vsync=14873223695625, InputEventId=969042513, HandleInputStart=14873225638708, AnimationStart=14873225640015, PerformTraversalsStart=14873225776861, DrawStart=14873225922477, FrameDeadline=14870329679580, FrameInterval=14873225603554, FrameStartTime=8388293, SyncQueued=14873227466169, SyncStart=14873227528592, IssueDrawCommandsStart=14873227686284, SwapBuffers=14873231802823, FrameCompleted=14873234131746, DequeueBufferDuration=13154, QueueBufferDuration=225808, GpuCompleted=14873234131746, SwapBuffersCompleted=14873232419169, DisplayPresentTime=14866689886174, CommandSubmissionCompleted=14873231802823, 
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 31 frames!  The application may be doing too much work on its main thread.
+[OpenGLRenderer] Davey! duration=749ms; Flags=0, FrameTimelineVsyncId=3536327, IntendedVsync=14877107005296, Vsync=14877140580978, InputEventId=0, HandleInputStart=14877153283051, AnimationStart=14877153284589, PerformTraversalsStart=14877153284859, DrawStart=14877811081089, FrameDeadline=14877132062409, FrameInterval=14877153271820, FrameStartTime=8390447, SyncQueued=14877821529666, SyncStart=14877821545589, IssueDrawCommandsStart=14877823410974, SwapBuffers=14877851834897, FrameCompleted=14877856060089, DequeueBufferDuration=23346, QueueBufferDuration=206462, GpuCompleted=14877856060089, SwapBuffersCompleted=14877852296320, DisplayPresentTime=14875126914937, CommandSubmissionCompleted=14877851834897, 
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[GestureDetector] obtain mCurrentDownEvent. id: 170416445 caller: android.view.View_IOnTouchListenerImplementor.n_onTouch:-2 android.view.View_IOnTouchListenerImplementor.onTouch:31 android.view.View.dispatchTouchEvent:15540 
+[GestureDetector] obtain mCurrentMotionEventRaw. action: 2 id: 553570181
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[monodroid-gc] 46080 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 24761(1192KB) AllocSpace objects, 77(10164KB) LOS objects, 37% free, 39MB/63MB, paused 23us,26us total 88.712ms
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 105 frames!  The application may be doing too much work on its main thread.
+[OpenGLRenderer] Davey! duration=904ms; Flags=0, FrameTimelineVsyncId=3537870, IntendedVsync=14882079997443, Vsync=14882960395773, InputEventId=1054136060, HandleInputStart=14882965941470, AnimationStart=14882965942585, PerformTraversalsStart=14882966027547, DrawStart=14882966231893, FrameDeadline=14882096715522, FrameInterval=14882965910739, FrameStartTime=8384746, SyncQueued=14882969662354, SyncStart=14882969713585, IssueDrawCommandsStart=14882970005239, SwapBuffers=14882979954470, FrameCompleted=14882984097431, DequeueBufferDuration=17692, QueueBufferDuration=684924, GpuCompleted=14882982552470, SwapBuffersCompleted=14882984097431, DisplayPresentTime=14877626699435, CommandSubmissionCompleted=14882979954470, 
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 34 frames!  The application may be doing too much work on its main thread.
+[monodroid-gc] 46080 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 51777(2435KB) AllocSpace objects, 153(18MB) LOS objects, 37% free, 39MB/63MB, paused 22us,26us total 88.388ms
+[OpenGLRenderer] Davey! duration=1240ms; Flags=0, FrameTimelineVsyncId=3540704, IntendedVsync=14888513943132, Vsync=14888513943132, InputEventId=0, HandleInputStart=14888523302004, AnimationStart=14888523303620, PerformTraversalsStart=14888523303966, DrawStart=14889731964927, FrameDeadline=14888522276465, FrameInterval=14888523295620, FrameStartTime=16666666, SyncQueued=14889741206580, SyncStart=14889741374850, IssueDrawCommandsStart=14889742614619, SwapBuffers=14889752880388, FrameCompleted=14889754481734, DequeueBufferDuration=27346, QueueBufferDuration=797384, GpuCompleted=14889754481734, SwapBuffersCompleted=14889754008080, DisplayPresentTime=14886290745467, CommandSubmissionCompleted=14889752880388, 
+[OpenGLRenderer] Davey! duration=739ms; Flags=0, FrameTimelineVsyncId=3540714, IntendedVsync=14889741575405, Vsync=14889774908737, InputEventId=0, HandleInputStart=14889787156196, AnimationStart=14889787157657, PerformTraversalsStart=14889787157965, DrawStart=14890439170926, FrameDeadline=14889766637338, FrameInterval=14889787144965, FrameStartTime=8395267, SyncQueued=14890449856657, SyncStart=14890450194695, IssueDrawCommandsStart=14890451500926, SwapBuffers=14890475979388, FrameCompleted=14890481339426, DequeueBufferDuration=13884, QueueBufferDuration=181654, GpuCompleted=14890481339426, SwapBuffersCompleted=14890476389964, DisplayPresentTime=14887029263313, CommandSubmissionCompleted=14890475979388, 
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 0
+[ViewRootImpl@6ffcbde[MainActivity]] ViewPostIme pointer 1
+[Choreographer] Skipped 35 frames!  The application may be doing too much work on its main thread.
+[monodroid-gc] 46080 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 20483(1036KB) AllocSpace objects, 68(8976KB) LOS objects, 37% free, 40MB/64MB, paused 21us,29us total 90.089ms
+[OpenGLRenderer] Davey! duration=1266ms; Flags=0, FrameTimelineVsyncId=3541506, IntendedVsync=14891667919976, Vsync=14891684586642, InputEventId=0, HandleInputStart=14891698374541, AnimationStart=14891698376694, PerformTraversalsStart=14891698377425, DrawStart=14892907982463, FrameDeadline=14891676253309, FrameInterval=14891698361425, FrameStartTime=16666666, SyncQueued=14892917287847, SyncStart=14892917904232, IssueDrawCommandsStart=14892918761847, SwapBuffers=14892929130347, FrameCompleted=14892935474001, DequeueBufferDuration=19307, QueueBufferDuration=173000, GpuCompleted=14892934209924, SwapBuffersCompleted=14892935474001, DisplayPresentTime=14887121532582, CommandSubmissionCompleted=14892929130347, 
+[monodroid-gc] 46080 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 7156(568KB) AllocSpace objects, 56(7392KB) LOS objects, 37% free, 40MB/64MB, paused 32us,28us total 91.327ms
+[monodroid-gc] 46080 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 2343(107KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 23us,27us total 88.814ms
+[monodroid-gc] 46080 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 502(41KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 20us,28us total 93.143ms
+[monodroid-gc] 46081 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 18(16KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 23us,29us total 91.550ms
+[monodroid-gc] 46082 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 48(80KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 199us,29us total 94.864ms
+[monodroid-gc] 46083 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 51(47KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 23us,27us total 88.697ms
+[monodroid-gc] 46084 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 72(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 23us,28us total 88.203ms
+[monodroid-gc] 46082 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 39(33KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,30us total 88.300ms
+[monodroid-gc] 46083 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 4(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 24us,33us total 87.603ms
+[monodroid-gc] 46084 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,27us total 89.042ms
+[monodroid-gc] 46085 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 91(62KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 20us,29us total 94.043ms
+[monodroid-gc] 46086 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 17(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 21us,29us total 91.957ms
+[monodroid-gc] 46087 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,28us total 89.839ms
+[monodroid-gc] 46088 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 3(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,28us total 88.756ms
+[monodroid-gc] 46089 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 14(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 20us,29us total 89.392ms
+[monodroid-gc] 46087 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 9(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 21us,28us total 89.709ms
+[monodroid-gc] 46088 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 3(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 24us,29us total 89.148ms
+[monodroid-gc] 46089 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 16(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 21us,29us total 92.205ms
+[monodroid-gc] 46087 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 8(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,30us total 89.686ms
+[monodroid-gc] 46088 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 4(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 21us,28us total 90.496ms
+[monodroid-gc] 46089 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 598(48KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 23us,28us total 95.585ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 140(36KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 21us,29us total 89.205ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 25(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 26us,35us total 95.680ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 11(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 25us,32us total 93.960ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 13(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,32us total 91.201ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 7(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 24us,30us total 96.480ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 8(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,31us total 91.755ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 7(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,28us total 93.585ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 8(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 23us,29us total 93.756ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 7(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 24us,29us total 92.996ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 8(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 23us,29us total 89.500ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 7(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 25us,31us total 89.401ms
+[monodroid-gc] 46090 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 7(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 25us,32us total 88.613ms
+[monodroid-gc] 46091 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,35us total 89.051ms
+[monodroid-gc] 46091 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,31us total 89.595ms
+[monodroid-gc] 46092 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 23us,31us total 87.867ms
+[monodroid-gc] 46092 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 251(23KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 24us,28us total 90.291ms
+[monodroid-gc] 46093 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 89(34KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 20us,33us total 93.693ms
+[monodroid-gc] 46093 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 22us,28us total 95.296ms
+[monodroid-gc] 46094 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 25us,31us total 92.024ms
+[monodroid-gc] 46094 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 231(22KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 25us,29us total 96.201ms
+[libc] Requested dump for pid 18381 (.defaultmauiapp)
+[monodroid-gc] 46095 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 69(49KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 90us,41us total 168.909ms
+[monodroid-gc] 46095 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 50us,51us total 153.267ms
+[monodroid-gc] 46096 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 75us,51us total 150.295ms
+[monodroid-gc] 46096 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 6(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 49us,57us total 144.940ms
+[monodroid-gc] 46097 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 52us,63us total 153.290ms
+[monodroid-gc] 46097 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(16KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 36us,87us total 145.871ms
+[monodroid-gc] 46098 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 4(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 53us,56us total 147.343ms
+[monodroid-gc] 46099 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 3(16KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 42us,49us total 128.283ms
+[monodroid-gc] 46100 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 4(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 44us,48us total 136.552ms
+[monodroid-gc] 46101 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 6(45KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 36us,51us total 133.288ms
+[monodroid-gc] 46102 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 23(46KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 29us,40us total 126.628ms
+[monodroid-gc] 46102 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 6(32KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 38us,50us total 138.445ms
+[monodroid-gc] 46103 outstanding GREFs. Performing a full GC!
+[.defaultmauiapp] Explicit concurrent copying GC freed 5(31KB) AllocSpace objects, 0(0B) LOS objects, 37% free, 40MB/64MB, paused 30us,37us total 124.883ms
+[monodroid-gc] 46103 outstanding GREFs. Performing a full GC!
