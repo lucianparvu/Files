@@ -3,475 +3,346 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"      
              xmlns:viewModels="clr-namespace:DefaultMauiApp.ViewModels"
              xmlns:model="clr-namespace:DefaultMauiApp.Models.Entities"          
+             xmlns:local="clr-namespace:DefaultMauiApp.Helpers"
              x:DataType="viewModels:HomeViewModel"      
              xmlns:templates="clr-namespace:DefaultMauiApp.Views.Templates"
              xmlns:localization="clr-namespace:DefaultMauiApp.Resources.Strings"
              x:Class="DefaultMauiApp.Views.HomePage" 
              xmlns:modelSearch="clr-namespace:DefaultMauiApp.Models"  
              xmlns:controls="clr-namespace:DefaultMauiApp.Controls"             
-             Shell.PresentationMode="NotAnimated"                          
+             Shell.PresentationMode="NotAnimated"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls" 
+             ios:NavigationPage.PrefersLargeTitles="True"                  
              Style="{StaticResource GrayBg}">
-     <ContentPage.Resources>
-        <Style x:Key="IndicatorViewStyle" TargetType="Border">
-            <Setter Property="VisualStateManager.VisualStateGroups">
-                <VisualStateGroupList>
-                    <VisualStateGroup>
-                        <VisualState Name="Normal" >
-                            <VisualState.Setters>
-                                <Setter Property="WidthRequest" Value="10"></Setter>
-                            </VisualState.Setters>
-                        </VisualState>
-                        <VisualState Name="Selected">
-                            <VisualState.Setters>
-                                <Setter Property="WidthRequest" Value="30"></Setter>
-                                <Setter Property="BackgroundColor" Value="Transparent" />
-                            </VisualState.Setters>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateGroupList>
-            </Setter>
-        </Style>
-    </ContentPage.Resources>
-    <Shell.TitleView >
+<ContentPage.Resources>
+    <Style x:Key="IndicatorViewStyle" TargetType="Border">
+        <Setter Property="VisualStateManager.VisualStateGroups">
+            <VisualStateGroupList>
+                <VisualStateGroup>
+                    <VisualState Name="Normal" >
+                        <VisualState.Setters>
+                            <Setter Property="WidthRequest" Value="10"></Setter>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState Name="Selected">
+                        <VisualState.Setters>
+                            <Setter Property="WidthRequest" Value="30"></Setter>
+                            <Setter Property="BackgroundColor" Value="Transparent" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateGroupList>
+        </Setter>
+    </Style>        
+</ContentPage.Resources>
+<Shell.TitleView >
         <Grid Margin="0,0,0,0"  >
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="190" ></ColumnDefinition>
-                        <ColumnDefinition Width="*" ></ColumnDefinition>
-                    </Grid.ColumnDefinitions>    
-            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="190" ></ColumnDefinition>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
             <Image Grid.Column="0"  IsVisible="{OnPlatform iOS=true, MacCatalyst=true, Default=false}" Source="{Binding ZoneLogo.ThumbnailHostPathPublic}"  HeightRequest="30" WidthRequest="120" HorizontalOptions="Start" BackgroundColor="Transparent"  />
             <Button Grid.Column="0" IsVisible="{OnPlatform Android=true,WinUI=true, Default=false}" ImageSource="{Binding ZoneLogo.ThumbnailHostPathPublic}"  HeightRequest="30" WidthRequest="120" HorizontalOptions="Start" BackgroundColor="Transparent"  />
-             
+
             <Grid Grid.Column="1" HorizontalOptions="End">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="40" ></ColumnDefinition>
-                            <ColumnDefinition Width="40"></ColumnDefinition>
-                            <ColumnDefinition Width="45" ></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" ></ColumnDefinition>
+                    <ColumnDefinition Width="40"></ColumnDefinition>
+                    <ColumnDefinition Width="45" ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
                 <Border Grid.Column="0" WidthRequest="40" BackgroundColor="Transparent" >
-                        <Button ImageSource="ro" Padding="0" BackgroundColor="Transparent"  WidthRequest="{StaticResource buttonIconSizes}"  HorizontalOptions="Center" Clicked="OnCultureRoClicked"  />
+                    <Button ImageSource="ro" Padding="0" BackgroundColor="Transparent"  WidthRequest="{StaticResource buttonIconSizes}"  HorizontalOptions="Center" Clicked="OnCultureRoClicked"  />
                 </Border>
                 <Border Grid.Column="1"  WidthRequest="40" BackgroundColor="Transparent" >
                     <Button  ImageSource="uk" Padding="0"  BackgroundColor="Transparent"  WidthRequest="{StaticResource buttonIconSizes}"  HorizontalOptions="Center" Clicked="OnCultureEnClicked"    />
                 </Border>
                 <Border Grid.Column="2"  WidthRequest="42" BackgroundColor="Transparent">
-                    <Button   ImageSource="{AppThemeBinding Light=iconsearch, Dark=iconsearch_w}"  Style="{StaticResource BtnSearch}"  Padding="0" BackgroundColor="Transparent"  HorizontalOptions="Center"  WidthRequest="{StaticResource buttonIconSizes}"  Command="{Binding GoToSearchPageCommand}"/>
+                    <Button   ImageSource="{AppThemeBinding Light=iconsearch, Dark=iconsearch_w}"  Style="{StaticResource BtnSearch}"  Padding="0" BackgroundColor="Transparent"  HorizontalOptions="Center"  WidthRequest="{StaticResource buttonIconSizes}"   />
 
                 </Border>
             </Grid>
-                </Grid>
-    </Shell.TitleView> 
-    
-    <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" >
-        <Grid >
-            <CollectionView ItemsSource="{Binding ProductCategoryList}"   SelectionMode="None" ItemsUpdatingScrollMode="KeepScrollOffset"
-                            VerticalOptions="FillAndExpand"
-                            >
-                <CollectionView.Header>
-                    <VerticalStackLayout IsVisible="{Binding HasBanners}">
-                        <Border  BackgroundColor="Transparent" >
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="10"/>
-                            </Border.StrokeShape>
-                            <CarouselView ItemsSource="{Binding BannerFileList}" HeightRequest="{OnIdiom Phone=160, Tablet=230, Default=250}"  
-                                          x:Name="BannersCarouselView" Position="{Binding PositionBanner}"
-                                          BackgroundColor="Transparent"  IndicatorView="IndicatorViewBanners" Loop="False" >
-                                <CarouselView.ItemTemplate>
-                                    <DataTemplate  x:DataType="model:ZoneFile">
-                                        <Image  Source="{Binding ThumbnailHostPathPublic}" Aspect="AspectFill" 
-                                                VerticalOptions="Fill" HorizontalOptions="Fill" >
-                                            <Image.GestureRecognizers>
-                                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToPageCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
-                                            </Image.GestureRecognizers>
-                                        </Image>
-                                    </DataTemplate>
-                                </CarouselView.ItemTemplate>
-                            </CarouselView>
-                        </Border>
-                        
-                        <IndicatorView x:Name="IndicatorViewBanners"    
-                                IndicatorsShape="Circle"
-                                IndicatorColor="#c4c4c4"
-                                SelectedIndicatorColor="{StaticResource AccentColor}"
-                                HorizontalOptions="Center"
-                                VerticalOptions="End"
-                                Margin="0,8,0,10" HeightRequest="20" Position="{Binding PositionBanner}"  >  
-                            <IndicatorView.IndicatorTemplate>
-                                <DataTemplate>
-                                    <Border Style="{StaticResource IndicatorViewStyle}" HeightRequest="10"  >
-                                        <Border.StrokeShape>
-                                            <RoundRectangle CornerRadius="30" />
-                                        </Border.StrokeShape>
-                                    </Border>
-                                </DataTemplate>
-                            </IndicatorView.IndicatorTemplate>
-                        </IndicatorView>
-                      
-                    </VerticalStackLayout>                  
-                </CollectionView.Header>
-                <CollectionView.ItemsLayout>
-                    <GridItemsLayout Span="{OnIdiom Phone=2, Tablet=3, Desktop=4}"
-                                         Orientation="Vertical"
-                                         HorizontalItemSpacing="15"
-                                         VerticalItemSpacing="15"/>
-                </CollectionView.ItemsLayout>
-                <CollectionView.ItemTemplate   SelectionMode="None"  >
-                    <DataTemplate x:DataType="model:ProductCategory"  >               
-                        <Border Padding="5" Style="{StaticResource RoundedGrayBorder}"  Margin="0,0" >
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="10"/>
-                            </Border.StrokeShape>
-                            
-                            <Grid Padding="5" HorizontalOptions="Center">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="{OnIdiom Phone=155, Tablet=150, Desktop=230}" />
-                                    <RowDefinition Height="45" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="{OnIdiom Phone=155, Tablet=150, Desktop=1*}"/>
-                                </Grid.ColumnDefinitions>
-                                <Border Grid.Row="0" Grid.Column="0" Padding="10" Stroke="{AppThemeBinding Light=White, Dark=White}"  StrokeThickness="1" StrokeShape="RoundRectangle 5" >
-                                    <ImageButton  
-                                        Source="{Binding ThumbnailHostPathPublic}"
-                                        Aspect="AspectFill"  MaximumWidthRequest="130"
-                                        VerticalOptions="Fill"  HorizontalOptions="Fill"
-                                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToProductCategoryCommand}" CommandParameter="{Binding .}" />
-                                </Border>
-                                <Label Grid.Row="1"
-                                        Grid.Column="0"
-                                        Text="{Binding Title}"                                   
-                                        FontAttributes="Bold" 
-                                        VerticalOptions="Center" Margin="0, 5, 0, 0" Padding="0" FontSize="{OnIdiom Phone=14, Tablet=14, Desktop=15}" >
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToProductCategoryCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
-                                    </Label.GestureRecognizers>
-                                </Label>
-                                <Grid.GestureRecognizers>
-                                    <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToProductCategoryCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
-                                </Grid.GestureRecognizers>
-                            </Grid>
-                        </Border>                     
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>   
-             
-            <CollectionView.Footer>
-                    <VerticalStackLayout Padding="0"   Spacing="15"  Margin="0,15,0,0"   IsVisible="{Binding HasFooter}">
-                        <VerticalStackLayout IsVisible="{Binding HasNewProductsOnHomePage}">
-                            <Label  Text="{x:Static localization:AppResource.NewProductsOnHomePage}"  FontAttributes="Bold" FontSize="14"></Label>
-                            <CollectionView  ItemsSource="{Binding NewProductList}"
-                                 SelectionMode="None"  Margin="0, 10"  HeightRequest="220"   >                                
-                                <CollectionView.ItemsLayout>
-                                    <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10" />
-                                </CollectionView.ItemsLayout>
-                                <CollectionView.ItemTemplate>
-                                    <DataTemplate x:DataType="model:Product">
-                                        <Border Padding="5,0"  Style="{StaticResource RoundedGrayBorder}"  >
-                                            <Border.StrokeShape>
-                                                <RoundRectangle CornerRadius="10"/>
-                                            </Border.StrokeShape>
-                                            <Grid Padding="5">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="130" />
-                                                </Grid.ColumnDefinitions>
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="130" />
-                                                    <RowDefinition Height="37" />
-                                                    <RowDefinition Height="40" />
-                                                </Grid.RowDefinitions>
-                                                <Border ZIndex="1"  Margin="0,5,0,0" Style="{StaticResource DiscountLabel}" IsVisible="{Binding HasDiscount}" VerticalOptions="Start" HorizontalOptions="Start">
-
-                                                    <Border.StrokeShape>
-                                                        <RoundRectangle CornerRadius="3"/>
-                                                    </Border.StrokeShape>
-                                                    <Label  FontAttributes="Bold" TextColor="#fff"
-                                                        MaxLines="1" 
-                                                        LineBreakMode="TailTruncation"
-                                                        FontSize="14" 
-                                                        VerticalOptions="Center" HorizontalTextAlignment="Center"  HorizontalOptions="Center"  ZIndex="1">
-                                                        <Label.FormattedText >
-                                                            <FormattedString>
-                                                                <Span Text="-"/>
-                                                                <Span Text="{Binding Discount , StringFormat='{0:F0}'}" />                                                              
-                                                                <Span Text="%" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                </Border>
-                                                <ImageButton Source="{Binding ThumbnailHostPathPublic}"  Grid.Column="0"  Grid.Row="0"  Margin="5"                    
-                                                 Aspect="AspectFit"  
-                                                 HeightRequest="130"  WidthRequest="130" Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}"
-                                                 BorderWidth="1" >  
-                                                </ImageButton>
-
-                                                <Label  Text="{Binding Title}"  Grid.Column="0" Grid.Row="1" FontSize="13" Margin="0, 5, 0, 0"
-                                              FontAttributes="Bold"  MaxLines="2"  >
-                                                    <Label.GestureRecognizers>
-                                                        <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
-                                                    </Label.GestureRecognizers>
-                                                </Label>
-
-                                                <VerticalStackLayout  Grid.Column="0" Grid.Row="2" Margin="0,5,0,0" >
-
-                                                    <Label  IsVisible="{Binding HasDiscount}"
-                                                        MaxLines="1"
-                                                        LineBreakMode="TailTruncation"
-                                                        FontSize="11"
-                                                        VerticalOptions="Center"  FontAttributes="Bold"
-                                                        HorizontalOptions="Start" HorizontalTextAlignment="Start" TextColor="DarkGray"   TextDecorations="Strikethrough"   >
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span Text="{Binding OldPrice}"  TextDecorations="Strikethrough"    />
-                                                                <Span Text=" "/>
-                                                                <Span Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                    <Label  IsVisible="{Binding HasUserPriceOld}"
-                                                    MaxLines="1"
-                                                    LineBreakMode="TailTruncation"
-                                                    FontSize="11"
-                                                    VerticalOptions="Center" 
-                                                    HorizontalOptions="Start" HorizontalTextAlignment="Start" TextColor="DarkGray"  Margin="0,0,0,0" TextDecorations="Strikethrough" >
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span Text="{Binding UserPriceOld}" />
-                                                                <Span Text=" "/>
-                                                                <Span Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                    <Label   FontSize="13"
-                                               LineBreakMode="TailTruncation"  HorizontalOptions="Start"
-                                               FontAttributes="Italic"  VerticalOptions="Center"  >
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span   Text="{Binding Price}"  />
-                                                                <Span  Text=" " />
-                                                                <Span Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                </VerticalStackLayout>                               
-
-                                            </Grid>
-                                        </Border>
-                                    </DataTemplate>
-                                </CollectionView.ItemTemplate>
-                            </CollectionView>
-                        </VerticalStackLayout>
-                        <VerticalStackLayout IsVisible="{Binding HasRecommendedProductsOnHomePage}">
-                            <Label   Text="{x:Static localization:AppResource.RecommendedProductsOnHomePage}"  FontAttributes="Bold" FontSize="14"></Label>
-                            <CollectionView   ItemsSource="{Binding HomeProductList}" 
-                               SelectionMode="None"    Margin="0, 10"  HeightRequest="220"  >
-                                
-                                <CollectionView.ItemsLayout>
-                                    <LinearItemsLayout Orientation="Horizontal"   ItemSpacing="10"/>
-                                </CollectionView.ItemsLayout>
-                                <CollectionView.ItemTemplate>
-                                    <DataTemplate  x:DataType="model:Product">
-                                        <Border Padding="5,0"  Style="{StaticResource RoundedGrayBorder}"   >
-                                            <Border.StrokeShape>
-                                                <RoundRectangle CornerRadius="10"/>
-                                              </Border.StrokeShape>
-                                           
-                                            <Grid Padding="5">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="130" />
-                                                </Grid.ColumnDefinitions>
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="130" />
-                                                    <RowDefinition Height="37" />
-                                                    <RowDefinition Height="30" />
-                                                </Grid.RowDefinitions>
-                                                <Border ZIndex="1"  Margin="0,5,0,0" Style="{StaticResource DiscountLabel}" IsVisible="{Binding HasDiscount}" VerticalOptions="Start" HorizontalOptions="Start">
-
-                                                    <Border.StrokeShape>
-                                                        <RoundRectangle CornerRadius="3"/>
-                                                    </Border.StrokeShape>
-                                                    <Label  FontAttributes="Bold" TextColor="#fff"
-                                                        MaxLines="1" 
-                                                        LineBreakMode="TailTruncation"
-                                                        FontSize="14" 
-                                                        VerticalOptions="Center" HorizontalTextAlignment="Center"  HorizontalOptions="Center"  ZIndex="1">
-                                                        <Label.FormattedText >
-                                                            <FormattedString>
-                                                                <Span Text="-"/>
-                                                                <Span Text="{Binding Discount , StringFormat='{0:F0}'}" />                                                                
-                                                                <Span Text="%" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                </Border>
-                                                <ImageButton Source="{Binding ThumbnailHostPathPublic}"    Grid.Column="0"  Grid.Row="0"  Margin="5"                       
-                                                     Aspect='AspectFit'  
-                                                     HeightRequest="130"  WidthRequest="130" Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}"
-                                                     BorderWidth="1" >
-                                                    </ImageButton>
-
-
-                                                <Label  Text="{Binding Title}"  Grid.Column="0" Grid.Row="1" FontSize="13" Margin="0, 5, 0, 0"
-                                                      FontAttributes="Bold"  MaxLines="2"  >
-                                                        <Label.GestureRecognizers>
-                                                            <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
-                                                        </Label.GestureRecognizers>
-                                                    </Label>
-
-                                                <VerticalStackLayout  Grid.Column="0" Grid.Row="2" Margin="0,5,0,0" >
-
-                                                    <Label  IsVisible="{Binding HasDiscount}"
-                                                        MaxLines="1"
-                                                        LineBreakMode="TailTruncation"
-                                                        FontSize="11"
-                                                        VerticalOptions="Center"  FontAttributes="Bold"
-                                                        HorizontalOptions="Start" HorizontalTextAlignment="Start" TextColor="DarkGray"   TextDecorations="Strikethrough"   >
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span Text="{Binding OldPrice}"  TextDecorations="Strikethrough"    />
-                                                                <Span Text=" "/>
-                                                                <Span Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                    <Label  IsVisible="{Binding HasUserPriceOld}"
-                                                        MaxLines="1"
-                                                        LineBreakMode="TailTruncation"
-                                                        FontSize="11"
-                                                        VerticalOptions="Center" 
-                                                        HorizontalOptions="Start" HorizontalTextAlignment="Start" TextColor="DarkGray"  Margin="0,0,0,0" TextDecorations="Strikethrough" >
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span Text="{Binding UserPriceOld}" />
-                                                                <Span Text=" "/>
-                                                                <Span Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                    <Label   FontSize="13"
-                                               LineBreakMode="TailTruncation"
-                                               FontAttributes="Italic"  VerticalOptions="Center"  >
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span   Text="{Binding Price}"  />
-                                                                <Span  Text=" " />
-                                                                <Span Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                </VerticalStackLayout>
-                                            </Grid>
-                                            </Border>
-                                    </DataTemplate>
-                                </CollectionView.ItemTemplate>
-                            </CollectionView>    
-                        </VerticalStackLayout>
-                        <VerticalStackLayout IsVisible="{Binding HasRecentlyVisitedProducts}">
-                            <Label   Text="{x:Static localization:AppResource.RecentlyViewed}"  FontAttributes="Bold" FontSize="14"></Label>
-                            <CollectionView   ItemsSource="{Binding RecentlyVisitedProductList}" 
-                               SelectionMode="None"    Margin="0,5"  HeightRequest="220"  >
-
-                                <CollectionView.ItemsLayout>
-                                    <LinearItemsLayout Orientation="Horizontal"   ItemSpacing="10"/>
-                                </CollectionView.ItemsLayout>
-                                <CollectionView.ItemTemplate>
-                                    <DataTemplate  x:DataType="model:RecentlyVisitedProduct">
-                                        <Border Padding="5,0"  Style="{StaticResource RoundedGrayBorder}"   >
-                                            <Border.StrokeShape>
-                                                <RoundRectangle CornerRadius="10"/>
-                                            </Border.StrokeShape>
-
-                                            <Grid Padding="5,5">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="130" />
-                                                </Grid.ColumnDefinitions>
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="130" />
-                                                    <RowDefinition Height="37" />
-                                                    <RowDefinition Height="30" />
-                                                </Grid.RowDefinitions>
-                                                <Border ZIndex="1"  Margin="0,5,0,0" Style="{StaticResource DiscountLabel}" IsVisible="{Binding Product.HasDiscount}" VerticalOptions="Start" HorizontalOptions="Start">
-
-                                                    <Border.StrokeShape>
-                                                        <RoundRectangle CornerRadius="3"/>
-                                                    </Border.StrokeShape>
-                                                    <Label  FontAttributes="Bold" TextColor="#fff"
-                                                                MaxLines="1" 
-                                                                LineBreakMode="TailTruncation"
-                                                                FontSize="14" 
-                                                                VerticalOptions="Center" HorizontalTextAlignment="Center"  HorizontalOptions="Center"  ZIndex="1">
-                                                        <Label.FormattedText >
-                                                            <FormattedString>
-                                                                <Span Text="-"/>
-                                                                <Span Text="{Binding Product.Discount , StringFormat='{0:F0}'}" />                                                              
-                                                                <Span Text="%" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                </Border>
-                                                <ImageButton Source="{Binding Product.ThumbnailHostPathPublic}"   Grid.Column="0"  Grid.Row="0"  Margin="5"                       
-                                                     Aspect='AspectFit'  
-                                                     HeightRequest="130"  WidthRequest="130" Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding Product}"
-                                                     BorderWidth="1" >
-                                                </ImageButton>
-
-
-                                                <Label  Text="{Binding Product.Title}"  Grid.Column="0" Grid.Row="1"  FontSize="13" Margin="0, 5, 0, 0"
-                                                      FontAttributes="Bold"  MaxLines="4"  >
-                                                    <Label.GestureRecognizers>
-                                                        <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding Product}" ></TapGestureRecognizer>
-                                                    </Label.GestureRecognizers>
-                                                </Label>
-                                                <VerticalStackLayout  Grid.Column="0" Grid.Row="2" Margin="0,5,0,0" >
-
-                                                    <Label  IsVisible="{Binding Product.HasDiscount}"
-                                                        MaxLines="1"
-                                                        LineBreakMode="TailTruncation"
-                                                        FontSize="11"
-                                                        VerticalOptions="Center"  FontAttributes="Bold"
-                                                        HorizontalOptions="Start" HorizontalTextAlignment="Start" TextColor="DarkGray"   TextDecorations="Strikethrough"   >
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span Text="{Binding Product.OldPrice}"  TextDecorations="Strikethrough"    />
-                                                                <Span Text=" "/>
-                                                                <Span Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                    <Label  IsVisible="{Binding Product.HasUserPriceOld}"
-                                                        MaxLines="1"
-                                                        LineBreakMode="TailTruncation"
-                                                        FontSize="11"
-                                                        VerticalOptions="Center" 
-                                                        HorizontalOptions="Start" HorizontalTextAlignment="Start" TextColor="DarkGray"  Margin="0,0,0,0" TextDecorations="Strikethrough" >
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span Text="{Binding Product.UserPriceOld}" />
-                                                                <Span Text=" "/>
-                                                                <Span Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                    <Label   FontSize="13"
-                                               LineBreakMode="TailTruncation"
-                                               FontAttributes="Italic"  VerticalOptions="Center"  >
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span   Text="{Binding Product.Price}"  />
-                                                                <Span  Text=" " />
-                                                                <Span Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
-                                                    </Label>
-                                                </VerticalStackLayout>
-                                         
-                                            </Grid>
-                                        </Border>
-                                    </DataTemplate>
-                                </CollectionView.ItemTemplate>
-                            </CollectionView>
-                        </VerticalStackLayout>
-                    </VerticalStackLayout>
-            </CollectionView.Footer>
-        </CollectionView>
         </Grid>
-    </RefreshView> 
+    </Shell.TitleView>
+
+    <!--<RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" >-->
+<ScrollView x:Name="ScrollViewGeneral">          
+<StackLayout>
+    <VerticalStackLayout IsVisible="{Binding HasBanners}">
+        <Border  BackgroundColor="Transparent" >
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10"/>
+            </Border.StrokeShape>
+            <CarouselView ItemsSource="{Binding BannerFileList}" HeightRequest="{OnIdiom Phone=160, Tablet=230, Default=250}"  
+                            x:Name="BannersCarouselView" Position="{Binding PositionBanner}"
+                            BackgroundColor="Transparent"  IndicatorView="IndicatorViewBanners" Loop="False" >
+                <CarouselView.ItemTemplate>
+                    <DataTemplate  x:DataType="model:ZoneFile">
+                        <Image  Source="{Binding ThumbnailHostPathPublic,Mode=OneTime}" Aspect="AspectFill" 
+                                VerticalOptions="Fill" HorizontalOptions="Fill" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToPageCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </Border>
+
+        <IndicatorView x:Name="IndicatorViewBanners"    
+                IndicatorsShape="Circle"
+                IndicatorColor="#c4c4c4"
+                SelectedIndicatorColor="{StaticResource AccentColor}"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Margin="0,8,0,10" HeightRequest="20" Position="{Binding PositionBanner}"  >
+            <IndicatorView.IndicatorTemplate>
+                <DataTemplate>
+                    <Border Style="{StaticResource IndicatorViewStyle}" HeightRequest="10"  >
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30" />
+                        </Border.StrokeShape>
+                    </Border>
+                </DataTemplate>
+            </IndicatorView.IndicatorTemplate>
+        </IndicatorView>
+
+    </VerticalStackLayout>
+    <FlexLayout BindableLayout.ItemsSource="{Binding ProductCategoryList}"
+            JustifyContent="SpaceEvenly"
+            Wrap="Wrap" Margin="{OnPlatform iOS='5,0', Android='5,0'}">
+        <BindableLayout.ItemTemplate>
+            <DataTemplate x:DataType="model:ProductCategory">
+
+                        <Border  Padding="{OnPlatform iOS='0,5', Android='5,5'}" Style="{StaticResource RoundedGrayBorder}"  Margin="{OnPlatform iOS='0,5', Android='0,5'}"  >
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10"/>
+                    </Border.StrokeShape>
+
+                    <Grid Padding="5" HorizontalOptions="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="{OnIdiom Phone=155, Tablet=150, Desktop=230}" />
+                            <RowDefinition Height="45" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="{OnIdiom Phone=155, Tablet=150, Desktop=1*}"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Row="0" Grid.Column="0" Padding="10" Stroke="{AppThemeBinding Light=White, Dark=White}"  StrokeThickness="1" StrokeShape="RoundRectangle 5" >
+                            <ImageButton  
+                                Source="{Binding ThumbnailHostPathPublic,Mode=OneTime}"
+                                Aspect="AspectFill"  MaximumWidthRequest="130"
+                                VerticalOptions="Fill"  HorizontalOptions="Fill"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToProductCategoryCommand}" CommandParameter="{Binding .}" />
+                        </Border>
+
+                        <Label Grid.Row="1"
+                                Grid.Column="0"
+                                Text="{Binding Title,Mode=OneTime}"                                   
+                                FontAttributes="Bold" 
+                                VerticalOptions="Center" Margin="0, 5, 0, 0" Padding="0" FontSize="{OnIdiom Phone=14, Tablet=14, Desktop=15}" >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToProductCategoryCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToProductCategoryCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                </Border>
+
+            </DataTemplate>
+        </BindableLayout.ItemTemplate>
+    </FlexLayout>
+
+            <VerticalStackLayout IsVisible="{Binding HasNewProductsOnHomePage}" Margin="{OnPlatform iOS='20,30,20,20', Android='15,30,15,15'}">
+        <Label  Text="{x:Static localization:AppResource.NewProductsOnHomePage}"  FontAttributes="Bold" FontSize="16"></Label>
+        <CollectionView  ItemsSource="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NewProductList}"
+                            SelectionMode="None"  Margin="0, 10"  HeightRequest="240"   >
+            <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" ItemSpacing="{OnPlatform iOS='15', Android='10'}" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Product">
+                    <Border Padding="5,0"  Style="{StaticResource RoundedGrayBorder}"  >
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10"/>
+                        </Border.StrokeShape>
+                                <StackLayout CompressedLayout.IsHeadless="True" WidthRequest="180" HeightRequest="240"  Padding="{OnPlatform iOS='15,20', Android='15,20'}">
+                                    <ImageButton Source="{Binding ThumbnailHostPathPublic,Mode=OneTime}"   VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="140" WidthRequest="140"
+                                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ProductCategoryDetailViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}" />
+
+                                    <Label  Padding="0,10"
+                                       Text="{Binding Title,Mode=OneTime}" Style="{StaticResource ProductTitle}" FontSize="13"  
+                                       LineBreakMode="WordWrap" MaxLines="2"  >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                   
+                                    <HorizontalStackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+                                            <Label  IsVisible="{Binding HasDiscount,Mode=OneTime}" Text="{Binding OldPrice,Mode=OneTime}"    TextDecorations="Strikethrough"
+                                                            MaxLines="1"
+                                                            LineBreakMode="TailTruncation"
+                                                            FontSize="13"
+                                                            VerticalOptions="Center" 
+                                                            HorizontalOptions="Start"  Margin="0,0" TextColor="DarkGray"   >
+                                            </Label>
+                                            <Label  IsVisible="{Binding HasUserPriceOld}"
+                                                            MaxLines="1" Text="{Binding UserPriceOld,Mode=OneTime}"  
+                                                            LineBreakMode="TailTruncation"
+                                                            FontSize="13"
+                                                            VerticalOptions="Center" 
+                                                            HorizontalOptions="Start"  Margin="0,0" TextColor="DarkGray"  TextDecorations="Strikethrough" />
+
+                                            <Label    Style="{StaticResource ProductPrice}" Text="{Binding Price,Mode=OneTime}"  Margin="2,0" />
+                                            <Label Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}"
+                                       Style="{StaticResource ProductPrice}"
+                                           Margin="2,0" />
+                                      </HorizontalStackLayout>
+                                    
+                                    <Border   HorizontalOptions="Center" Margin="0,10,0,0" Style="{StaticResource DiscountLabel}" IsVisible="{Binding HasDiscount}" VerticalOptions="Start"  >
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="3"/>
+                                        </Border.StrokeShape>
+                                        <HorizontalStackLayout  VerticalOptions="Center"  HorizontalOptions="Center">
+                                            <Label Text="-" FontAttributes="Bold" TextColor="#fff" FontSize="14" HorizontalTextAlignment="Center" ></Label>
+                                            <Label Text="{Binding Discount, Mode=OneTime , StringFormat='{0:F0}'}" FontAttributes="Bold" HorizontalTextAlignment="Center"  FontSize="14"  TextColor="#fff"></Label>
+                                            <Label Text="%" FontAttributes="Bold" TextColor="#fff" FontSize="14" HorizontalTextAlignment="Center"  ></Label>
+                                        </HorizontalStackLayout>
+                                    </Border>
+                                </StackLayout>                               
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+
+            <VerticalStackLayout IsVisible="{Binding HasRecommendedProductsOnHomePage}" Margin="{OnPlatform iOS='20,0,20,20', Android='15,0,15,15'}">
+        <Label   Text="{x:Static localization:AppResource.RecommendedProductsOnHomePage}"  FontAttributes="Bold" FontSize="16"></Label>
+        <CollectionView    ItemsSource="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=HomeProductList}"
+                        SelectionMode="None"    Margin="0, 10"  HeightRequest="240"  >
+
+            <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal"   ItemSpacing="{OnPlatform iOS='15', Android='10'}"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Product">
+                            <Border Padding="5,0"  Style="{StaticResource RoundedGrayBorder}"  >
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="10"/>
+                                </Border.StrokeShape>
+                                <StackLayout CompressedLayout.IsHeadless="True" WidthRequest="180" HeightRequest="240" Padding="{OnPlatform iOS='15,20', Android='15,20'}">
+                                    <ImageButton Source="{Binding ThumbnailHostPathPublic,Mode=OneTime}"   VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="140" WidthRequest="140"
+                                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ProductCategoryDetailViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}" />
+
+                                    <Label  Padding="0,10"
+                                       Text="{Binding Title,Mode=OneTime}" Style="{StaticResource ProductTitle}" FontSize="13"  
+                                       LineBreakMode="WordWrap" MaxLines="2"  >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                   
+                                    <HorizontalStackLayout   HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Label  IsVisible="{Binding HasDiscount,Mode=OneTime}" Text="{Binding OldPrice,Mode=OneTime}"    TextDecorations="Strikethrough"
+                                                            MaxLines="1"
+                                                            LineBreakMode="TailTruncation"
+                                                            FontSize="13"
+                                                            VerticalOptions="Center" 
+                                                            HorizontalOptions="Start"  Margin="0,0" TextColor="DarkGray"   >
+                                        </Label>
+                                        <Label  IsVisible="{Binding HasUserPriceOld}"
+                                                            MaxLines="1" Text="{Binding UserPriceOld,Mode=OneTime}"  
+                                                            LineBreakMode="TailTruncation"
+                                                            FontSize="13"
+                                                            VerticalOptions="Center" 
+                                                            HorizontalOptions="Start"  Margin="0,0" TextColor="DarkGray"  TextDecorations="Strikethrough" />
+
+                                        <Label    Style="{StaticResource ProductPrice}" Text="{Binding Price,Mode=OneTime}"  Margin="2,0" />
+                                        <Label Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}"
+                                       Style="{StaticResource ProductPrice}"
+                                           Margin="2,0" />
+                                    </HorizontalStackLayout>
+                                    <Border   HorizontalOptions="Center"   Style="{StaticResource DiscountLabel}" IsVisible="{Binding HasDiscount}" VerticalOptions="Start"  >
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="3"/>
+                                        </Border.StrokeShape>
+                                        <HorizontalStackLayout  VerticalOptions="Center"  HorizontalOptions="Center">
+                                            <Label Text="-" FontAttributes="Bold" TextColor="#fff" FontSize="14" HorizontalTextAlignment="Center" ></Label>
+                                            <Label Text="{Binding Discount, Mode=OneTime , StringFormat='{0:F0}'}" FontAttributes="Bold" HorizontalTextAlignment="Center"  FontSize="14"  TextColor="#fff"></Label>
+                                            <Label Text="%" FontAttributes="Bold" TextColor="#fff" FontSize="14" HorizontalTextAlignment="Center"  ></Label>
+                                        </HorizontalStackLayout>
+                                    </Border>
+                                </StackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+
+            <VerticalStackLayout IsVisible="{Binding HasRecentlyVisitedProducts}" Margin="{OnPlatform iOS='20,0,20,20', Android='15,0,15,15'}">      
+            <Label Text="{x:Static localization:AppResource.RecentlyViewed}"  FontAttributes="Bold" FontSize="16"></Label>
+            <CollectionView  ItemsSource="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=RecentlyVisitedProductList}"
+                    SelectionMode="None"    Margin="0,5"  HeightRequest="240"  >
+
+                <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal"   ItemSpacing="{OnPlatform iOS='15', Android='10'}"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:RecentlyVisitedProduct">
+                            <Border Padding="5,0"  Style="{StaticResource RoundedGrayBorder}"  >
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="10"/>
+                                </Border.StrokeShape>
+                                <StackLayout CompressedLayout.IsHeadless="True" WidthRequest="180" HeightRequest="240" Padding="{OnPlatform iOS='15,20', Android='15,20'}">
+                                    <ImageButton Source="{Binding Product.ThumbnailHostPathPublic,Mode=OneTime}"   VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="140" WidthRequest="140"
+                                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:ProductCategoryDetailViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}" />
+
+                                    <Label  Padding="0,10"
+                                       Text="{Binding Product.Title,Mode=OneTime}" Style="{StaticResource ProductTitle}" FontSize="13"  
+                                       LineBreakMode="WordWrap" MaxLines="2"  >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:HomeViewModel}}, Path=NavigateToItemCommand}" CommandParameter="{Binding .}" ></TapGestureRecognizer>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                  
+                                    <HorizontalStackLayout   HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Label  IsVisible="{Binding Product.HasDiscount,Mode=OneTime}" Text="{Binding Product.OldPrice,Mode=OneTime}"    TextDecorations="Strikethrough"
+                                                            MaxLines="1"
+                                                            LineBreakMode="TailTruncation"
+                                                            FontSize="13"
+                                                            VerticalOptions="Center" 
+                                                            HorizontalOptions="Start"  Margin="0,0" TextColor="DarkGray"   >
+                                        </Label>
+                                        <Label  IsVisible="{Binding Product.HasUserPriceOld}"
+                                                            MaxLines="1" Text="{Binding Product.UserPriceOld,Mode=OneTime}"  
+                                                            LineBreakMode="TailTruncation"
+                                                            FontSize="13"
+                                                            VerticalOptions="Center" 
+                                                            HorizontalOptions="Start"  Margin="0,0" TextColor="DarkGray"  TextDecorations="Strikethrough" />
+
+                                        <Label    Style="{StaticResource ProductPrice}" Text="{Binding Product.Price,Mode=OneTime}"  Margin="2,0" />
+                                        <Label Text="{Binding Source={x:Static Application.Current}, Path=PageStateModel.Currency}"
+                                       Style="{StaticResource ProductPrice}"
+                                           Margin="2,0" />
+                                    </HorizontalStackLayout>
+                                    <Border   HorizontalOptions="Center" Margin="0,10,0,0" Style="{StaticResource DiscountLabel}" IsVisible="{Binding Product.HasDiscount}" VerticalOptions="Start"  >
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="3"/>
+                                        </Border.StrokeShape>
+                                        <HorizontalStackLayout  VerticalOptions="Center"  HorizontalOptions="Center">
+                                            <Label Text="-" FontAttributes="Bold" TextColor="#fff" FontSize="14" HorizontalTextAlignment="Center" ></Label>
+                                            <Label Text="{Binding Product.Discount, Mode=OneTime , StringFormat='{0:F0}'}" FontAttributes="Bold" HorizontalTextAlignment="Center"  FontSize="14"  TextColor="#fff"></Label>
+                                            <Label Text="%" FontAttributes="Bold" TextColor="#fff" FontSize="14" HorizontalTextAlignment="Center"  ></Label>
+                                        </HorizontalStackLayout>
+                                    </Border>
+                                </StackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </StackLayout> 
+</ScrollView>
+<!--</RefreshView>-->
 </ContentPage>
